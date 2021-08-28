@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpPage">
+
+
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="@string/sign_up"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/or"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_width="345dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="@string/full_name"
+        android:inputType="text"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUp"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="345dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email_address"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fullName"
+        app:layout_constraintStart_toStartOf="@+id/fullName"
+        app:layout_constraintTop_toBottomOf="@+id/fullName"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="345dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:padding="16dp"
+        android:maxLength="8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="345dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/confirm_password"
+        android:padding="16dp"
+        android:maxLength="8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.111" />
+
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/confirmPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/confirmPassword"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPassword"
+        app:layout_constraintVertical_bias="0.1" />
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_btn"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/or"
+        app:layout_constraintVertical_bias="0.126">
+
+    </com.google.android.gms.common.SignInButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
